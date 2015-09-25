@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="resources/sheet.css" >
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .s0{text-align:right;color:#000000;background-color:#ffffff;font-family:Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{text-align:left;color:#000000;background-color:#ffffff;font-family:Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="1115707543C0" style="width:100px" class="column-headers-background">A</th><th id="1115707543C1" style="width:100px" class="column-headers-background">B</th><th id="1115707543C2" style="width:100px" class="column-headers-background">C</th></tr></thead><tbody><tr style='height:20px;'><th id="1115707543R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">1</div></th><td class="s0" dir="ltr">619</td><td class="s1" dir="ltr">DR-1</td><td class="s0" dir="ltr">2/8/1927</td></tr><tr style='height:20px;'><th id="1115707543R1" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">2</div></th><td class="s0" dir="ltr">622</td><td class="s1" dir="ltr">DR-1</td><td class="s0" dir="ltr">2/10/1927</td></tr><tr style='height:20px;'><th id="1115707543R2" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">3</div></th><td class="s0" dir="ltr">734</td><td class="s1" dir="ltr">DR-3</td><td class="s0" dir="ltr">1/7/1930</td></tr><tr style='height:20px;'><th id="1115707543R3" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">4</div></th><td class="s0" dir="ltr">735</td><td class="s1" dir="ltr">DR-3</td><td class="s0" dir="ltr">1/12/1930</td></tr><tr style='height:20px;'><th id="1115707543R4" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">5</div></th><td class="s0" dir="ltr">751</td><td class="s1" dir="ltr">DR-3</td><td class="s0" dir="ltr">2/26/1930</td></tr><tr style='height:20px;'><th id="1115707543R5" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">6</div></th><td class="s0" dir="ltr">752</td><td class="s1" dir="ltr">DR-3</td><td></td></tr><tr style='height:20px;'><th id="1115707543R6" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">7</div></th><td class="s0" dir="ltr">837</td><td class="s1" dir="ltr">MSK-4</td><td class="s0" dir="ltr">1/14/1932</td></tr><tr style='height:20px;'><th id="1115707543R7" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">8</div></th><td class="s0" dir="ltr">844</td><td class="s1" dir="ltr">DR-1</td><td class="s0" dir="ltr">3/22/1932</td></tr></tbody></table></div>
+<script type='text/javascript'>
+function posObj(sheet, id, row, col, x, y) {
+  var rtl = false;
+  var sheetElement = document.getElementById(sheet);
+  if (!sheetElement) {
+    sheetElement = document.getElementById(sheet + '-grid-container');
+  }
+  if (sheetElement) {
+    rtl = sheetElement.getAttribute('dir') == 'rtl';
+  }
+  var r = document.getElementById(sheet+'R'+row);
+  var c = document.getElementById(sheet+'C'+col);
+  if (r && c) {
+    var objElement = document.getElementById(id);
+    var s = objElement.style;
+    var t = y;
+    while (r) {
+      t += r.offsetTop;
+      r = r.offsetParent;
+    }
+    var offsetX = x;
+    while (c) {
+      offsetX += c.offsetLeft;
+      c = c.offsetParent;
+    }
+    if (rtl) {
+      offsetX -= objElement.offsetWidth;
+    }
+    s.left = offsetX + 'px';
+    s.top = t + 'px';
+    s.display = 'block';
+    s.border = '1px solid #000000';
+  }
+};
+function posObjs() {
+};
+posObjs();</script>
