@@ -1,5 +1,5 @@
 index.html: talk.md
 	python refreeze/freeze.py
 
-open:
+vlew:
 	python refreeze/flask_app.py

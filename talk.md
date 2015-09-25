@@ -357,22 +357,26 @@ COUNT(*)
 ---
 
 * Averages can be done on subsets with `GROUP BY`: e.g. average reading
+per person for each quantity
 
 ```sql
-sqlite> SELECT taken, person, quant, AVG(reading) FROM Survey WHERE reading IS NOT NULL GROUP BY person, quant;
-taken       person      quant       AVG(reading)
-----------  ----------  ----------  ------------
-735                     sal         0.06        
-735                     temp        -26.0       
-622         dyer        rad         8.81        
-622         dyer        sal         0.11        
-837         lake        rad         1.825       
-837         lake        sal         0.1125      
-752         lake        temp        -16.0       
-751         pb          rad         6.66        
-751         pb          temp        -20.0       
-844         roe         rad         11.25       
-837         roe         sal         32.05       
+sqlite> SELECT taken, person, quant, AVG(reading) 
+   ...> FROM Survey 
+   ...> GROUP BY person, quant;
+
+person      quant       AVG(reading)
+----------  ----------  ------------
+            sal         0.06        
+            temp        -26.0       
+dyer        rad         8.81        
+dyer        sal         0.11        
+lake        rad         1.825       
+lake        sal         0.1125      
+lake        temp        -16.0       
+pb          rad         6.66        
+pb          temp        -20.0       
+roe         rad         11.25       
+roe         sal         32.05       
 ```
 
 ---
